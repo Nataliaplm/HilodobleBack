@@ -13,7 +13,7 @@ class Item extends Model
         'itemName' => 'required|max:255',
         'category' => 'required|max:255',
         'description' => 'required',
-        'image' => 'required|url',
+        'image' => 'required',
         'stockQuantity' => 'required|integer|min:0',
         'purchaseQuantity' => 'numeric|min:1',
         'price' => 'required|numeric|min:0.01',
@@ -28,6 +28,12 @@ class Item extends Model
         'purchaseQuantity',
         'price',
     ];
+
+    public function setImageAttribute($value)
+    {
+        $this->attributes['image'] = cloudinary()->upload($value->getRealPath())->getSecurePath();
+    }
+
 
     public function user()
     {

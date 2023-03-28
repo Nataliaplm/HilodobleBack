@@ -34,8 +34,9 @@
                 </div>
 
                 <div class="form-group">
+                    <button type="button" id="btn-photo">Añadir foto</button>
                     <label for="image">Imagen URL</label>
-                    <input type="url" name="image" id="image" class="form-control" placeholder="Imagen" required>
+                    <input type="text" name="image" id="image" class="form-control" placeholder="Imagen" required>
                     @if ($errors->has('image'))
                         <span class="invalid-feedback">{{ $errors->first('image') }}</span>
                     @endif

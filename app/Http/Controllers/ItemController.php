@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Cloudinary;
 use App\Models\Item;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
