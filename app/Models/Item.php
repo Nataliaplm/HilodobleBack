@@ -13,7 +13,7 @@ class Item extends Model
         'itemName' => 'required|max:255',
         'category' => 'required|max:255',
         'description' => 'required',
-        'image' => 'required',
+        'image' => 'required|file|mimes:jpeg,jpg,png,gif|max:2048',
         'stockQuantity' => 'required|integer|min:0',
         'purchaseQuantity' => 'numeric|min:1',
         'price' => 'required|numeric|min:0.01',
