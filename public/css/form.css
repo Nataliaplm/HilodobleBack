@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+    font-family: 'Montserrat';
+    color:#6a09b5;
+}
+.container{
+    padding-bottom: 10px;
+}
+form{
+    background-color: #6a09b5;
+    margin-bottom: 10px;
+}
+label{
+    color:white;
+    margin-left: 40px;
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.saveButton, .cancelButton, .backButton,.addButton {
+  
+    color:#6a09b5;
+    border:1px solid #6a09b5;
+    font-weight:bold;
+    width:150px;
+}
+a{
+    color: #6a09b5 !important;;
+    text-decoration: none!important;
+    font-weight: 600;
+}
+.itemData{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    padding:35px;
+}
+input{
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    display: flex;
+    justify-content: center;
+}
+.nav-item{
+    justify-self: flex-end;
+}
+.selection{
+    display: flex;
+    gap:30px;
+}
+#navbarDropdown{
+    padding-top: 30px;
+}

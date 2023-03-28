@@ -1,0 +1,15 @@
+.containerItem{
+    display:flex;
+    justify-content: center;
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+}
+.containerData{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.backButton{
+    margin-left: 20%;
+}

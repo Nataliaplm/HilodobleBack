@@ -1,0 +1,10 @@
+.createItem, .itemsList, .usersList{
+    color:#6a09b5;
+    border:1px solid #6a09b5; 
+    font-weight:bold;
+    width:150px;
+}
+.deleteItem{
+    border:none;
+    background-color: white;
+}
