@@ -48,7 +48,7 @@ Route::get('/showItem/{id}', [ItemController::class, 'show'])->name('showItem')-
 //CRUD del User
 
 //R del USER
-Route::get('/usersList',[UserController::class,'usersList'])->name('usersList')->middleware('isadmin', 'auth');
+Route::get('/usersList',[UserController::class,'usersList'])->name('usersList')/* ->middleware('isadmin', 'auth') */;
 
 //U del user
 Route::get('/editUser/{id}', [UserController::class, 'editUser'])->name('editUser')->middleware('isadmin', 'auth');
