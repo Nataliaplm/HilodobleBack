@@ -12,6 +12,7 @@
             <h5>Ciudad: {{$user->city}}</h5>
             <h5>Dirección: {{$user->address}}</h5>
             <h5>Código postal: {{$user->postcode}}</h5>
+            <a href="{{ route('editUser', ['id' => $user->id]) }}"><button class="backButton">Editar</a></br>
             <a href="{{ route('usersList') }}"><button class="backButton">Volver</a>
         </div>
     </div>

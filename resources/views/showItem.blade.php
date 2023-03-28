@@ -10,6 +10,7 @@
             <h4>{{$item->description}}</h4>
             <h5> {{$item->price}}€</h5>
             <h5>Stock disponible: {{$item->stockQuantity}}</h5>
+            <a href="{{ route('editItem',['id'=>$item->id]) }}"><button class="backButton">Editar</a><br>
             <a href="{{ route('home') }}"><button class="backButton">Volver</a><br>
         </div>
     </div>
