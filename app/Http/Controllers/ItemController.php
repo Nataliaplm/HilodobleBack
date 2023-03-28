@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Cloudinary;
+use Illuminate\Http\UploadedFile;
 use App\Models\Item;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -41,9 +42,17 @@ class ItemController extends Controller
         $item->itemName = $request->itemName;
         $item->category = $request->category;
         $item->description = $request->description;
-        $item->image = $request->image;
+
+        if ($request->hasFile('image')) {
+            $image_path = $request->file('image')->getRealPath();
+            $cloudinary_upload = Cloudinary\Uploader::upload($image_path, [
+                'folder' => 'items'
+            ]);
+        $item->image = $cloudinary_upload['secure_url'];
+        }
+
         $item->stockQuantity = $request->stockQuantity;
-        $item->purchaseQuantity;
+        $item->purchaseQuantity = $request->purchaseQuantity;
         $item->price = $request->price;
         $item->save();
 
@@ -92,10 +101,6 @@ class ItemController extends Controller
 
     public function destroy($id)
     {
-       /*  if (!auth()->user()->isAdmin) {
-            abort(403, 'Unauthorized action.');
-        } */
-
         $item = Item::find($id);
 
         Item::destroy($id);
