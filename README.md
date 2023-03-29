@@ -119,9 +119,9 @@
 
 <h2>8. Stacks</h2>
 
-* **Frontend:**  HTML5, CSS3, SASS,REACT <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="30" /></a>
+* **Frontend:**  HTML5, CSS3, SASS <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="30" /></a>
 <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="30" /></a>
-<a href="https://sass-lang.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/sass-original.svg" alt="Sass" height="30" /></a> <a href="https://sass-lang.com/" target="_blank"><img style="margin: 10px" src="https://download.logo.wine/logo/React_(web_framework)/React_(web_framework)-Logo.wine.png" alt="React" height="30" /></a>
+<a href="https://sass-lang.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/sass-original.svg" alt="Sass" height="30" /></a> 
 
 * **Backend:** PHP Laravel, SQL, phpMyAdmin, node.   <a href="https://www.php.net/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="35" />
 </a><a href="https://laravel.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/laravel-plain-wordmark.svg" alt="Laravel" height="30" /></a>
@@ -142,9 +142,7 @@
 
 <h2>9. Required:</h2>
 <li>NPM installed.</li>
-<li>Axios npm installed.</li>
 <li>PHP (Minimum, version 8.1).</li>
-<li>React.js installed.</li>
 <li>Composer & Laravel installed and updated to latest version.</li>
 <li>XAMPP/LAMPP installed.</li>
 <li>MySQL.</li><br>
