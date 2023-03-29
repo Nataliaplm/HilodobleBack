@@ -33,4 +33,6 @@ label{
 th {
     color:#6a09b5;
 }
-.deleteBtn{}
+.deleteBtn{
+    background-color: white;
+}
