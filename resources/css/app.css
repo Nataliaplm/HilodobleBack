@@ -1,4 +1,8 @@
 main{
     padding-bottom: 0!important;
-    margin-bottom: 0!important;
+    margin: 0 87px !important;
+}
+
+body{
+    margin: 0 87px !important;
 }

@@ -40,25 +40,18 @@
                         <td>{{ $item->stockQuantity }}</td>
                         <td>{{ $item->purchaseQuantity }}</td>
                         <td>{{ $item->price }}</td>
-                        <td>
+                        <td id="buttons">
                             <a href="{{ route('showItem', $item->id) }}" ><img src="../images/show.png" alt="eye button"></a><br>
                             <a href="{{ route('editItem',['id'=>$item->id]) }}" ><img src="../images/editPencil.png" alt="Pencil button"></a><br>
                             <form action="{{ route('deleteItem', $item->id) }}" method="POST" style="display: inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button class="deleteItem" type="submit"  onclick="return confirm('Estás seguro de querer borrar este producto?')"><img src="../images/deleteBin.png" alt="Bin button"></button>
-                            </form>
-                            <form action="{{ route('add') }}" method="POST" style="display: inline-block;">
-                                @csrf
-                                <input type="hidden" name="item_id" value="{{ $item->id }}">
-                                
-                                <input type="number" name="purchaseQuantity" class="form-control" value="1" min="1">
-                                <button type="submit" class="btn btn-primary btn-sm">Añadir al carrito</button>
+                                <button class="deleteItem" type="submit"  onclick="return confirm('¿Estás seguro de querer borrar este producto?')"><img src="../images/deleteBin.png" alt="Bin button"></button>
                             </form>
                         </td>
                     </tr>
                 @endforeach
-            </tbody> 
+            </tbody>
         </table>
     </div>
 </div>

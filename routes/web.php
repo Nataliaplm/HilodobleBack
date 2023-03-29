@@ -64,3 +64,6 @@ Route::get('/showUser/{id}', [UserController::class, 'show'])->name('showUser')-
 Route::get('/userNonAdmin', function () {
     return view('userNonAdmin');
 })->name('userNonAdmin');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -24,7 +24,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" >
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="/images/logotipo.png" alt="Logo Hilodoble" />
@@ -35,7 +35,7 @@
 
                 <div class="selection" id="">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                    <ul class="navbar-nav me-auto" >
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('home') }}"><button class="itemsList">{{ __('Productos') }}</a>
                         </li>
@@ -65,7 +65,7 @@
                                     {{ Auth::user()->name }}
                                 </a>
                                 <a href="{{ route('cart') }}" class="btn btn-link">
-                                    <i class="fa fa-shopping-cart"></i> Carrito 
+                                    <i class="fa fa-shopping-cart"></i> Carrito
                                     @if (auth()->user() && auth()->user()->cart()->count() > 0)
                                         <span class="badge badge-pill badge-danger">{{ auth()->user()->cart()->count() }}</span>
                                     @endif
@@ -94,6 +94,6 @@
             @yield('content')
         </main>
     </div>
-    @include('footer')  
+    @include('footer')
 </body>
-</html>  
+</html>
