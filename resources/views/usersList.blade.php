@@ -29,12 +29,12 @@
                             <td>   
                                 <a href="{{ route('editUser', ['id' => $user->id]) }}">Editar</a>
                                 <a href="{{ route('showUser', $user->id)}}">Mostrar</a>
-                                <form action="{{ route('deleteUser', $user->id) }}" method="POST">
+                                <form class="deleteBtn" action="{{ route('deleteUser', $user->id) }}" method="POST">
     
                                     @csrf
                                     @method('DELETE')
     
-                                    <button type="submit" class="bt-adm m-1 d-flex justify-content-center align-items-center" onclick="return confirm('¿Seguro que quieres borrar est usuario? {{ $user->name }} - ID {{ $user->id }}')">Remove</button>
+                                    <button type="submit" class="deletedBtn" onclick="return confirm('¿Seguro que quieres borrar est usuario? {{ $user->name }} - ID {{ $user->id }}')">Eliminar</button>
                                 </form>
                             </td>
                         </tr>

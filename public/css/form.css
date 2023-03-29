@@ -22,7 +22,6 @@ label{
     gap:20px;
 }
 .saveButton, .cancelButton, .backButton,.addButton {
-  
     color:#6a09b5;
     border:1px solid #6a09b5;
     font-weight:bold;
