@@ -4,12 +4,12 @@
     border:1px solid #6a09b5;
     font-weight:bold;
 }
-        
+
 .deleteItem{
     border:none;
     background-color: white;
 }
-
+    
 #buttons img{
     width: fit-content;
     max-width: 2em;
