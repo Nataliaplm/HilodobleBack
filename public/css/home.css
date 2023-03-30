@@ -5,11 +5,11 @@
     font-weight:bold;
 }
 
-.deleteItem{
+.deleteItem{  
     border:none;
     background-color: white;
 }
-    
+
 #buttons img{
     width: fit-content;
     max-width: 2em;
