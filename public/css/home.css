@@ -1,10 +1,10 @@
 .createItem, .itemsList, .usersList{
     width: fit-content;
-    color:#6a09b5;   
+    color:#6a09b5;
     border:1px solid #6a09b5;
     font-weight:bold;
 }
-
+        
 .deleteItem{
     border:none;
     background-color: white;
