@@ -6,6 +6,15 @@ h1{
 .container{
     padding-bottom: 10px;
 }
+
+#loginForm{
+    background-color: white !important;
+    }
+
+#loginForm label{
+    color: black;
+}
+
 form{
     background-color: #6a09b5;
     margin-bottom: 10px;
