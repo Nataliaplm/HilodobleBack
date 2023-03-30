@@ -158,8 +158,8 @@
 <li>Type in the terminal: <b>php artisan migrate:fresh --seed</b> and press intro.</li>
 <li>Type in the terminal: <b>npm install</b> and press intro.</li>
 <li>Type in the terminal: <b>npm run dev</b> and press intro.</li>
-<li>Type in other terminal the commands: <b>composer install and php artisan ui bootstrap --auth</b>.</li>
-<li>Type in the terminal: <b>php artisan serve</b> and press intro.</li>     
+<li>Open a new terminal and type: <b>composer install</b>.</li>
+<li>After the installation, type: <b>php artisan serve</b> and press intro.</li> 
 
 <h4>This project is supported by two different repositories. To see the complete project go to https://github.com/Albaric0que/hilodoble and follow the instructions in readMe.</h4>
 
